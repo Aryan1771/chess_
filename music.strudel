@@ -1,0 +1,2 @@
+$: sound("bd cp bd cp")
+$: note("36 43, 52 59 62 64").sound("sawtooth")
