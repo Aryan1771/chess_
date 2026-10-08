@@ -37,10 +37,12 @@ music.strudel            Audio/music experiment file
 
 ## Requirements
 
+The current application targets Windows because it imports `winsound` directly. Use Python with Tkinter support and create a virtual environment before installation.
+
 Install Python dependencies:
 
 ```powershell
-pip install pillow python-chess stockfish
+python -m pip install pillow python-chess stockfish
 ```
 
 Download a Stockfish engine binary and place it in the project folder with the name:
@@ -49,7 +51,7 @@ Download a Stockfish engine binary and place it in the project folder with the n
 stockfish
 ```
 
-On Windows, this may be an executable such as `stockfish.exe`. If you use a different filename, update the `stockfish_path` value in `chessgame.py`.
+On Windows, this may be an executable such as `stockfish.exe`. If you use a different filename, update the engine filename passed to `resource_path()` in `chessgame.py`.
 
 ## Run
 
